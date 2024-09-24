@@ -6,6 +6,7 @@ document.getElementById('donate-add-btn').addEventListener('click', function(){
   const donate = getInputValueById('donate-input');
   const balanceElement = document.querySelector('.noakhali-donate span');// donate-ammounts
   const accountElement = document.getElementById('account-balance');
+  const modal = document.getElementById('my_modal');
 
   const balance = parseFloat(balanceElement.innerText);
   const accountBdt = parseFloat(accountElement.innerText);
@@ -14,6 +15,9 @@ document.getElementById('donate-add-btn').addEventListener('click', function(){
     alert('Failed to Donate. Invalid donation amount.')
     return;
   }
+  else{
+    alert('Congratulations! Your donation is successful.');
+  };
 
   const newBalance = balance + donate;
   balanceElement.innerText = newBalance;
@@ -30,10 +34,6 @@ document.getElementById('donate-add-btn').addEventListener('click', function(){
   historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 });
 
-
-// donate in feni 
-//   donate       donate-in-noakhali      donate-input        donate-add-btn
-// feni-donate      donate-in-feni      feni-donate-input   feni-donate-add-btn
 document.getElementById('feni-donate-add-btn').addEventListener('click', function(){
   const donate = getInputValueById('feni-donate-input');
   const balanceElement = document.querySelector('.feni-donate span');
@@ -62,11 +62,6 @@ document.getElementById('feni-donate-add-btn').addEventListener('click', functio
   historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 });
 
-
-// donate in feni 
-//        donate            donate-in-noakhali             donate-input                 donate-add-btn
-//    feni-donate              donate-in-feni            feni-donate-input            feni-donate-add-btn
-// quota-protest-donate   donate-in-quota-protest    quota-protest-donate-input   quota-protest-donate-add-btn
 document.getElementById('quota-protest-donate-add-btn').addEventListener('click', function(){
   const donate = getInputValueById('quota-protest-donate-input');
   const balanceElement = document.querySelector('.quota-protest-donate span');
