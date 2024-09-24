@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Daisy ui cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Tailwind css cdn link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/77ba82d986.js"></script>
+  <!-- Google Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-white shadow sticky top-0">
+    <div class="navbar bg-[#F9F7F3] lg:px-20">
+      <div class="navbar-start">
+        <a href="./index.html"> <button class="btn bg-lime-300 text-black hover:bg-lime-500 hover:text-black w-20 font-bold"> Home </button> </a>
+        
+      </div>
+      <div class="navbar-center md:flex gap-2 hidden">
+        <img class="w-8" src="./Image/logo.png" alt="">
+        <button class=""> Donate Bangladesh </button>
+      </div>
+      <div class="navbar-end flex gap-2">
+        <img src="./Image/coin.png" alt="">
+        <button class="flex gap-1"> <span id="account-balance">5500</span> BDT </button>
+      </div>
+    </div>
+  </header>
+  <div class="px-20">
+    <h1 class="text-4xl font-bold py-8"> Important FAQ <i class="fa-regular fa-circle-question"></i> </h1>
+    <main class="space-y-3">
+      <div class="collapse collapse-arrow bg-white border-2 border-slate-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium"> Why is it important to donate for Noakhali and Feni? </div>
+        <div class="collapse-content">
+          <p> The recent floods in Noakhali and Feni have caused significant damage. Donations are crucial to provide essential supplies like food, water, and medicine, and to help rebuild the affected communities. </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 border-slate-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium"> How can I make a donation? </div>
+        <div class="collapse-content">
+          <p> You can donate by entering the amount in the donation input field under the specific project and clicking the "Donate Now" button. Your donation will go directly to support the relief efforts. </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 border-slate-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium"> How secure is the donation process? </div>
+        <div class="collapse-content">
+          <p> Our donation platform is completely secure and reliable. Every donation is carefully tracked, and funds are distributed to the respective relief projects efficiently. </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 border-slate-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium"> How much should I donate? </div>
+        <div class="collapse-content">
+          <p> You can donate any amount according to your capacity. Every contribution, big or small, is valuable and makes a difference to those in need. </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 border-slate-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium"> How can I view my donation history? </div>
+        <div class="collapse-content">
+          <p> You can view your donation history by clicking on the "History" tab. It will display all your past donations, including the date, time, and amount. </p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
