@@ -52,7 +52,6 @@ document.getElementById('quota-protest-donate-add-btn').addEventListener('click'
 // history btn tab functionality
 const historyTab = document.getElementById('history-btn');
 const donateTab = document.getElementById('donate-btn');
-
 function switchBtn(activeElement, inactiveElement, showElement, hideElement){
   activeElement.classList.add('bg-lime-300', 'text-black', 'hover:bg-lime-500', 'hover:text-black');
   activeElement.classList.remove('bg-white', 'border-2', 'border-gray-200');
