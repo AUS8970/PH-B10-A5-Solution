@@ -68,5 +68,5 @@ historyTab.addEventListener('click', function(){
 });
 
 donateTab.addEventListener('click', function(){
-  switchBtn(donateTab, historyTab, 'history-form', 'donate-ammount-from')
+  switchBtn(donateTab, historyTab, 'donate-ammount-from', 'history-form')
 });
