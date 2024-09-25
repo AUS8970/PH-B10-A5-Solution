@@ -15,13 +15,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    header{
+      background-color: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(9px);
+    }
+  </style>
 </head>
 <body class="">
-  <header class="bg-white shadow sticky top-0">
+  <header class="shadow sticky top-0" >
     <div class="navbar bg-[#F9F7F3] lg:px-20">
       <div class="navbar-start">
         <a href="./blog.html"><button class="btn bg-lime-300 text-black hover:bg-lime-500 hover:text-black w-20 font-bold"> Blog </button></a>
-        
       </div>
       <div class="navbar-center md:flex gap-2 hidden">
         <img class="w-8" src="./Image/logo.png" alt="">
@@ -52,13 +57,10 @@
             <h1 id="donate-in-noakhali" class="text-2xl font-bold"> Donate for Flood at Noakhali, Bangladesh. </h1>
             <p class="py-4">  The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. </p>
             <div class="">
-              <input id="donate-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" required />
-            </div>
-            
-            <button id="donate-add-btn" class="btn mt-3 w-full g-lime-300 bg-lime-500 text-black hover:bg-lime-500 hover:text-black font-bold"> Donate Now </button>
-
-            <!-- <button class="btn donate-btn mt-3 w-full g-lime-300 bg-lime-500 text-black hover:bg-lime-500 hover:text-black font-bold" onclick="my_modal_5.showModal()"> Donate Now </button>
-            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <input id="noakhali-donate-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" required />
+            </div>  
+            <button id="noakhali-donate-add-btn" class="btn mt-3 w-full g-lime-300 bg-lime-500 text-black hover:bg-lime-500 hover:text-black font-bold"> Donate Now </button>
+            <dialog id="noakhali-modal" class="modal modal-bottom sm:modal-middle">
               <div class="modal-box flex flex-col justify-center items-center">
                 <h1 class="text-4xl font-bold mb-5"> Congrates! </h1>
                 <img src="./Image/coin.png" alt="">
@@ -70,8 +72,7 @@
                   </form>
                 </div>
               </div>
-            </dialog> -->
-
+            </dialog>
           </div>
         </div>
       </div>
@@ -91,12 +92,9 @@
             <p class="py-4">  The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need. </p>
             <div class="">
               <input id="feni-donate-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" required />
-            </div>
-            
+            </div>  
             <button id="feni-donate-add-btn" class="btn mt-3 w-full g-lime-300 bg-lime-500 text-black hover:bg-lime-500 hover:text-black font-bold"> Donate Now </button>
-
-            <!-- <button class="btn donate-btn mt-3 w-full g-lime-300 bg-lime-500 text-black hover:bg-lime-500 hover:text-black font-bold" onclick="my_modal_5.showModal()"> Donate Now </button>
-            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <dialog id="feni-modal" class="modal modal-bottom sm:modal-middle">
               <div class="modal-box flex flex-col justify-center items-center">
                 <h1 class="text-4xl font-bold mb-5"> Congrates! </h1>
                 <img src="./Image/coin.png" alt="">
@@ -108,8 +106,7 @@
                   </form>
                 </div>
               </div>
-            </dialog> -->
-
+            </dialog>
           </div>
         </div>
       </div>
@@ -129,12 +126,9 @@
             <p class="py-4"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need. </p>
             <div class="">
               <input id="quota-protest-donate-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" required />
-            </div>
-            
+            </div>  
             <button id="quota-protest-donate-add-btn" class="btn mt-3 w-full g-lime-300 bg-lime-500 text-black hover:bg-lime-500 hover:text-black font-bold"> Donate Now </button>
-
-            <!-- <button class="btn donate-btn mt-3 w-full g-lime-300 bg-lime-500 text-black hover:bg-lime-500 hover:text-black font-bold" onclick="my_modal_5.showModal()"> Donate Now </button>
-            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <dialog id="quota-protest-modal" class="modal modal-bottom sm:modal-middle">
               <div class="modal-box flex flex-col justify-center items-center">
                 <h1 class="text-4xl font-bold mb-5"> Congrates! </h1>
                 <img src="./Image/coin.png" alt="">
@@ -146,8 +140,7 @@
                   </form>
                 </div>
               </div>
-            </dialog> -->
-
+            </dialog>
           </div>
         </div>
       </div>
