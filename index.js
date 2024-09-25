@@ -2,25 +2,25 @@ function getInputValueById(id){
   return parseFloat(document.getElementById(id).value);
 }
 
-function showMoadl(modalId){
+function showModal(modalId){
   const modal = document.getElementById(modalId);
-  modal.showMoadl();
+  modal.showModal();
 }
 
-function donation(donateInput, donateBalance, modalId, donateHistory){
+function updateDonation(donateInput, donateBalance, modalId, donateHistory) {
   const donate = getInputValueById(donateInput);
-  const donateAmmount = document.querySelector(`${donateBalance} span`);
+  const donateAmmount = document.querySelector(`.${donateBalance} span`);
   const accountAmmount = document.getElementById('account-balance');
 
   const balance = parseFloat(donateAmmount.innerText);
   const accountBdt = parseFloat(accountAmmount.innerText);
 
-  if(isNaN(donate) || donate <= 0 || donate > accountBdt){
-    alert('Failed to Donate. Invalid donation amount.')
+  if (isNaN(donate) || donate <= 0 || donate > accountBdt) {
+    alert('Failed to Donate. Invalid donation amount.');
     return;
   }
-  showMoadl(modalId);
-  
+  showModal(modalId);
+
   const newBalance = balance + donate;
   donateAmmount.innerText = newBalance;
   const newAccount = accountBdt - donate;
@@ -30,25 +30,24 @@ function donation(donateInput, donateBalance, modalId, donateHistory){
   const historyItem = document.createElement('div');
   historyItem.className = 'border-2 border-gray-200 bg-white p-4 rounded-xl';
   historyItem.innerHTML = `
-  <p class="text-md font-bold">${donate} Taka is ${donateHis}</p>
-  <p class="text-sm opacity-50"> Date : ${new Date().toDateString()} ${new Date().toLocaleTimeString()}</p>`;
+    <p class="text-md font-bold">${donate} Taka is ${donateHis}</p>
+    <p class="text-sm opacity-50">Date: ${new Date().toDateString()} ${new Date().toLocaleTimeString()}</p>`;
   const historyContainer = document.getElementById('history-container');
   historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-};
+}
 
-
-document.getElementById('noakhali-donate-add-btn').addEventListener('click', function(){
-  donation('noakhali-donate-input', 'noakhali-donate', 'noakhali-modal', 'donate-in-noakhali')
+// Event Listeners for Donate buttons
+document.getElementById('noakhali-donate-add-btn').addEventListener('click', function () {
+  updateDonation('noakhali-donate-input', 'noakhali-donate', 'noakhali-modal', 'donate-in-noakhali');
 });
 
-document.getElementById('feni-donate-add-btn').addEventListener('click', function(){
-  donation('feni-donate-input', 'feni-donate', 'feni-modal', 'donate-in-feni')
+document.getElementById('feni-donate-add-btn').addEventListener('click', function () {
+  updateDonation('feni-donate-input', 'feni-donate', 'feni-modal', 'donate-in-feni');
 });
 
-document.getElementById('quota-protest-donate-add-btn').addEventListener('click', function(){
-  donation('quota-protest-donate-input', 'quota-protest-donate', 'quota-protest-modal', 'donate-in-quota-protest')
+document.getElementById('quota-protest-donate-add-btn').addEventListener('click', function () {
+  updateDonation('quota-protest-donate-input', 'quota-protest-donate', 'quota-protest-modal', 'donate-in-quota-protest');
 });
-
 
 // history btn tab functionality
 const historyTab = document.getElementById('history-btn');
